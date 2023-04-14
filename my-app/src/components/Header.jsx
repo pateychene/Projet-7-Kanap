@@ -9,8 +9,6 @@ export default function Header() {
 			<figure className='headerWrap__fig'>
 				<img className="logo" src={logo} alt="logo de l'agence kasa" />
 			</figure>
-			
-			<h1>TEST HEADER</h1>
 		</header>
 	)
 }
