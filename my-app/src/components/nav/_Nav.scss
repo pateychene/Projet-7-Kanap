@@ -1,0 +1,22 @@
+.nav-header {
+	display: flex;
+    align-items: center;
+    justify-content: flex-end;
+	text-transform: uppercase;
+
+	
+
+	&_link-home,
+	&_link-about {
+		color:#ff6060;
+		text-decoration: none;
+		padding-left: 0.8rem;
+
+	
+
+		&:hover,
+		&:focus {
+			text-decoration-line: underline;
+		}
+	}
+}

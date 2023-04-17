@@ -1,9 +1,13 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
-export default function Card() {
+function Card({title, image, id}){
+
   return (
-    <div>
-      <h1>Card</h1>
-    </div>
+     <Link to={`/fichelogement/${id}`}> 
+     <h3>{title}</h3>
+     </Link>
   )
 }
+
+export default Card
