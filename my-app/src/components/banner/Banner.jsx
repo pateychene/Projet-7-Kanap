@@ -1,5 +1,5 @@
 import React from 'react'
-import '../style/Banner.css'
+
 export default function Banner() {
   return (
     <div>
@@ -8,7 +8,6 @@ export default function Banner() {
 				<div className="banner-text">Chez vous, partout et ailleurs</div>
 			</div>
 		</div>
-	;
 		</div>
 	);
 }

@@ -1,11 +1,10 @@
- @import"./Utils/variables.scss";
- @import"./Utils/mixins.scss";
-
- 
- @import"./Base/base.scss";
+ @import"./Utils/variables";
+ @import"./Utils/mixins";
+ @import"./Base/base";
  
  
 
  @import "../components/Nav/Nav";
  @import"../components/header/Header";
+ @import"../components/banner/Banner";
 

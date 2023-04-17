@@ -8,6 +8,7 @@ import FicheLogement from './pages/FicheLogement/FicheLogement';
 
 import {BrowserRouter as Router} from "react-router-dom";
 import Header from "./components/header/Header";
+import Banner from "./components/banner/Banner";
 import Footer from "./components/footer/Footer";
 import Main from "./components/main/Main";
 /*
@@ -28,6 +29,7 @@ function App(){
   return (
      <Router>
           <Header />
+          <Banner />
           <Main />
           <Footer/>
     </Router>
