@@ -1,5 +1,4 @@
 ///import React from 'react'
-import './Footer.css'
 import logoFooter from '../../assets/images/logofooter.svg'
 
 
