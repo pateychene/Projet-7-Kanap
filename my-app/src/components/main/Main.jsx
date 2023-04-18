@@ -1,4 +1,4 @@
-import './Main.css'
+/*import './Main.css'
 import Home from '../../pages/Home/Home'
 import About from '../../pages/About/About'
 import Error from '../../pages/Error/Error'
@@ -20,4 +20,4 @@ function Main() {
         </main>
     )
 }
-export default Main
+export default Main*/

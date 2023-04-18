@@ -1,41 +1,26 @@
-
-/*;
-
-import Home from './pages/Home/Home';
-import About from './pages/About/About';
-import FicheLogement from './pages/FicheLogement/FicheLogement';
-*/
-
-import {BrowserRouter as Router} from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home/Home";
+import About from "./pages/About/About";
 import Header from "./components/header/Header";
-import Banner from "./components/banner/Banner";
+import FicheLogement from "./pages/FicheLogement/FicheLogement";
 import Footer from "./components/footer/Footer";
-import Main from "./components/main/Main";
-/*
+import Error from "./pages/Error/Error.jsx";
+
 function App() {
-  return (
-<div className="App">
-        <Router>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/logement/:id" element={<FicheLogement />} />
-        </Router>
-      </div>
-  );
+	return (
+		<div className="App">
+			<Header />
+			<main>
+				<Routes>
+					<Route path="/" element={<Home />} />
+					<Route path="/about" element={<About />} />
+					<Route path="/logement/:id" element={<FicheLogement />} />
+					<Route path="*" element={<Error />} />
+				</Routes>
+			</main>
+			<Footer />
+		</div>
+	);
 }
-*/
-
-function App(){
-  return (
-     <Router>
-          <Header />
-          <Banner />
-          <Main />
-          <Footer/>
-    </Router>
-  )
-
-}
-
 
 export default App;
