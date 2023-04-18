@@ -7,6 +7,7 @@
 		height: 223px;
 		@include big-radius;
 		@include flex-banner;
+		background-position: center;
 	}
 }
 
@@ -32,6 +33,7 @@
 		@include WH-full;
 		@include font(48px, 500);
 		@include big-radius;
+		
 	}
 }
 
