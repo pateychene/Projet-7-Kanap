@@ -6,7 +6,7 @@
 	background-color: $footer-color;
 	flex-direction: column;
 
-	&__text {
+	h2 {
 		@include font(12px, 500);
 		display: flex;
 		align-items: flex-end;
