@@ -3,7 +3,6 @@
     align-items: center;
     justify-content: flex-end;
 	text-transform: uppercase;
-
 	
 
 	&_link-home,
@@ -12,7 +11,7 @@
 		font-style: normal;
 		font-weight: 100;
 		text-align: right;
-		color:#ff6060;
+		color:$primary-color;
 		text-decoration: none;
 		padding-left: 3.5rem;
 
