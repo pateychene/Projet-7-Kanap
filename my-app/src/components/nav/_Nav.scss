@@ -1,21 +1,25 @@
+
+ 
+
 .nav-header {
-	display: flex;
-    align-items: center;
-    justify-content: flex-end;
+	@include flex-end;
 	text-transform: uppercase;
-	
+
+	@media screen and (min-width: $breakpoint-desktop) {
+		text-transform: none;
+	}
 
 	&_link-home,
 	&_link-about {
-		font-size: 25px;
-		font-style: normal;
-		font-weight: 100;
-		text-align: right;
-		color:$primary-color;
+		@include font-right(12px);
+		color: $primary-color;
 		text-decoration: none;
-		padding-left: 3.5rem;
+		padding-left: 0.8rem;
 
-	
+		@media screen and (min-width: $breakpoint-desktop) {
+			@include font-right(24px);
+			padding-left: 3.5rem;
+		}
 
 		&:hover,
 		&:focus {
