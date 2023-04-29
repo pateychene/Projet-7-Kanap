@@ -1,6 +1,7 @@
 .collapse {
 	width: 100%;
 	margin: 20px 0;
+	
 
 	@media screen and (min-width: $breakpoint-desktop) {
 		margin: 31px auto 0;
@@ -23,7 +24,6 @@
 		padding: 7px 15px;
 		border-radius: 5px;
 		width: 100%;
-
 		@media screen and (min-width: $breakpoint-desktop) {
 			height: 47px;
 		}
@@ -32,11 +32,12 @@
 	}
 }
 .contenu {
-		opacity: 2;
 		color: $primary-color;
 		background: $secondary-color;
 		border-radius: 5px;
-		transition: opacity 0.4s ease-in-out, height 0.4s 0.4s ease-in-out;
+		opacity: 1;
+		
+		
 
 		p {
 			margin: 0;
