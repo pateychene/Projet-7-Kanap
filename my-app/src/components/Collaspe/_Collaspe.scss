@@ -49,5 +49,28 @@
 			}
 		}
 	}
+	.containerCollaspe {
+		@include flex-column;
+		width: 100%;
+	
+		@media screen and (min-width: $breakpoint-desktop) {
+			flex-direction: row;
+			gap: 6%;
+		}
+	}
+	
+	.equipList {
+		list-style-type: none;
+	}
+	.containerDescription{
+		@media screen and (min-width: $breakpoint-desktop) {
+		width: 50%;
+		}
+	}
+	.containerEquipements{
+		@media screen and (min-width: $breakpoint-desktop) {
+		width: 50%;
+		}
+	}
 
 
