@@ -3,6 +3,7 @@ import Carrousel from "../../components/Carrousel/Carrousel"
 import logements from '../../datas/logements'
 import Error from '../Error/Error'
 import Collaspe from '../../components/Collaspe/Collaspe'
+import Tag from '../../components/Tag/Tag'
 
 export default function FicheLogement() {
 
@@ -23,14 +24,26 @@ export default function FicheLogement() {
     </div>
   ))
 
+  const tags = currentLogement && currentLogement.tags;
+
   
   return (
     <div>
       <Carrousel images={currentLogement.pictures} />
-      <h1>voici la fiche Logement</h1> 
-      <div className='tagLogement'>
-        
-      </div>
+      <section className="hostInfo-container">
+					<div className="title-tags-container">
+						<div className="title-container redFont">
+							<h1>{currentLogement.title}</h1>
+							<h3>{currentLogement.location}</h3>
+						</div>
+						<div className="tags-container">
+							{tags.map((tag) => (
+								<Tag key={tag} tag={tag} />
+							))}
+						</div>
+					</div>
+	
+				</section>
       
       <div className='containerCollaspe'>
         <div className='containerDesciption'>
