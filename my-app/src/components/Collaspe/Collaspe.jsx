@@ -28,7 +28,7 @@ function Collapse(props){
             ) :<img className="chevron" src={vectorUp}  alt="Fermer"></img>
             }
          </div>
-        {!isCollapsed && <div className="contenu"><p>{props.aboutText}</p> </div>}
+        {!isCollapsed && <div className="contenu">{props.aboutText} </div>}
         </div>
     )
 }

@@ -24,32 +24,3 @@ export default function Home() {
 
 
 
-/*import React from "react";
-import Card from "../../components/cards/Card"
-import logements from '../../datas/logements.json'
-
-
-
-function Home(){
-	const cardList = logements.map((card) => (
-		<Card key={card.id}  title ={card.title} image={card.cover} id={card.id}></Card>
-	))
-
-	return (
-		<div className="cards-container"> {cardList}</div>
-	)
-}
-export default function Home() {
-	return (
-		<div>
-			<Header />
-			<Nav />
-			<Banner />
-			<CardList />
-		</div>
-	);
-}
-export default Home
-
-*/
-

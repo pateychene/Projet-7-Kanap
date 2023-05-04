@@ -39,7 +39,7 @@
 		
 		
 
-		p {
+		 
 			margin: 0;
 			padding: 22px 15px;
 			pointer-events: none;
@@ -49,7 +49,7 @@
 				@include font(24px, 400);
 			}
 		}
-	}
+	
 	.containerCollaspe {
 		@include flex-column;
 		width: 100%;

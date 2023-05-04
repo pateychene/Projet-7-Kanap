@@ -2,6 +2,8 @@ import React, {useState} from 'react'
 import PropTypes from 'prop-types'
 import vectorRight from '../../assets/images/VectorRight.svg'
 import vectorLeft from '../../assets/images/VectorLeft.png'
+
+
 const Carrousel = ({images}) => {
     const [currentImage, setCurrentImage] = useState(0);
     //Définir les fonctions suivant et précédent
