@@ -13,20 +13,22 @@ export default function FicheLogement() {
   //Recuperer les infos du logement dans notre json grace a son id 
   const currentLogement = logements.find((logement) => logement.id === id) 
   //console log pour tester si notre data a bien ete recupere 
-  console.log(currentLogement)
-  //Récupérer les équipements
-  const equipements = currentLogement.equipments.map( (equipement) => (
-    <div key={equipement}>
-    {equipement}
-    <br/>
-    </div>
-    )) 
-  //Recuperer les tags  
-    const tags = currentLogement && currentLogement.tags;
   
+  var equipements = [];
+  var tags = [];
   //si url du logement pas valide , renvoi sur page erreur, autrement on retourne le code plus bas.
-  if(! currentLogement ){
+  if(! currentLogement  || currentLogement === undefined){
     return <Error />
+  }else{
+      //Récupérer les équipements
+       equipements = currentLogement.equipments.map( (equipement) => (
+        <div key={equipement}>
+        {equipement}
+        <br/>
+        </div>
+        )) 
+      //Recuperer les tags  
+     tags = currentLogement && currentLogement.tags;
   }
   
     return (
